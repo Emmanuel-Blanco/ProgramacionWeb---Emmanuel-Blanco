@@ -1,0 +1,34 @@
+# Arquitectura de una Aplicacion WEB
+
+### Definicion:
+#### La arquitectura de una aplicación web es la estructura o diseño que define cómo se organizan y comunican entre sí los distintos componentes de una aplicación web. Esta arquitectura determina cómo se manejan aspectos como la presentación, la lógica de negocio, el almacenamiento de datos y la comunicación entre el cliente (navegador) y el servidor.
+
+### Arquitecturas mas comunes:
+
+#### De acuerdo a como se comunican las partes que componen la app:
+
+#### **Cliente-Servidor**: En la arquitectura cliente-servidor, la aplicación se divide en dos partes: el cliente (normalmente ejecutado en el navegador del usuario) y el servidor (que maneja la lógica de negocio y el acceso a la base de datos). El cliente envía solicitudes (como peticiones HTTP) al servidor, y este responde con los datos necesarios o con una vista renderizada. Esta comunicación es asimétrica: el cliente inicia siempre la comunicación, y el servidor simplemente responde. Esta arquitectura es la base del funcionamiento de la mayoría de las aplicaciones web tradicionales y establece una relación clara y estructurada entre los componentes, facilitando el desarrollo y mantenimiento.
+
+![Imagen](https://reactiveprogramming.io/_next/image?url=%2Ffigures%2Fcliente-servidor.png&w=1200&q=75)
+
+#### **Punto a Punto:** La arquitectura punto a punto (P2P) permite que cada componente de la aplicación actúe como cliente y servidor al mismo tiempo. Es decir, los nodos pueden iniciar solicitudes y también responderlas. En este modelo no existe un servidor central tradicional, sino que la lógica de la aplicación se distribuye entre múltiples nodos que se comunican directamente entre sí. Este tipo de arquitectura se utiliza en sistemas descentralizados, como aplicaciones de intercambio de archivos o algunas aplicaciones blockchain.
+
+![Imagen](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Red_punto_a_punto.png/250px-Red_punto_a_punto.png)
+
+#### De acuerdo a como se organiza el codigo de la app:
+
+#### **Monolito:** En una arquitectura monolítica, todo el código de la aplicación está contenido en un único proyecto o bloque indivisible. La lógica de negocio, la interfaz de usuario, el acceso a datos y demás funcionalidades están integradas en un solo sistema, que se despliega y escala como una unidad. Aunque puede ser más fácil de construir inicialmente, con el crecimiento del proyecto, el código tiende a volverse difícil de mantener, y cualquier cambio puede afectar a múltiples partes del sistema. A pesar de esto, sigue siendo una opción válida para aplicaciones pequeñas o en etapas tempranas de desarrollo.
+
+![Imagen](https://www.ionos.mx/digitalguide/fileadmin/_processed_/b/b/csm_ES-Microservice_da5ee6d1c2.webp)
+
+#### **Capas:** La arquitectura por capas organiza el código en diferentes niveles lógicos, cada uno con una responsabilidad específica. Normalmente se divide en capa de presentación (interfaz de usuario), capa de lógica de negocio, capa de acceso a datos y, a veces, capa de persistencia o integración. Cada capa se comunica solamente con la capa inferior inmediata, lo que ayuda a mantener el código más modular, reutilizable y fácil de probar. Esta estructura es muy común en aplicaciones empresariales y permite una mejor separación de responsabilidades dentro del equipo de desarrollo.
+
+![Imagen](https://reactiveprogramming.io/_next/image?url=%2Ffigures%2Fcapas.png&w=1920&q=75)
+
+#### **Microservicios:** La arquitectura de microservicios descompone una aplicación grande en múltiples servicios pequeños e independientes, cada uno enfocado en una funcionalidad específica del negocio. Cada microservicio tiene su propio código, puede estar escrito en un lenguaje distinto, y muchas veces incluso tiene su propia base de datos. Los servicios se comunican entre sí mediante APIs (por ejemplo, REST o gRPC). Esta organización permite que diferentes equipos trabajen de forma autónoma en distintos servicios, facilita la escalabilidad y mejora la tolerancia a fallos, aunque introduce una mayor complejidad en la gestión y comunicación entre componentes.
+
+![Imagen](https://reactiveprogramming.io/_next/image?url=%2Ffigures%2Fmicroservicios.png&w=1920&q=75)
+
+#### **Serverless:** La arquitectura serverless reorganiza el código en pequeñas funciones que se ejecutan bajo demanda en la nube, eliminando la necesidad de gestionar servidores físicos o virtuales. Cada función realiza una tarea específica y es ejecutada en respuesta a eventos (como una solicitud HTTP, una carga de archivo, o una actualización en la base de datos). Esto permite construir aplicaciones altamente escalables y con costos optimizados, ya que solo se paga por el tiempo de ejecución real. El código está distribuido y desacoplado, lo cual mejora la flexibilidad, aunque puede dificultar la depuración y el seguimiento de errores en sistemas complejos.
+
+![Imagen](https://dc722jrlp2zu8.cloudfront.net/media/uploads/2021/09/17/1.jpg)
