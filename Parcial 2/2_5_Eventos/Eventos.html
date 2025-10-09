@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografía de Porfirio Díaz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 40px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        img {
+            max-width: 300px;
+            height: auto;
+            display: block;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        .container {
+            max-width: 801px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .credit {
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="titulo">Porfirio Díaz</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Porfirio_D%C3%ADaz_1910.jpg/440px-Porfirio_D%C3%ADaz_1910.jpg" alt="Porfirio Díaz">
+        
+        <p><strong>José de la Cruz Porfirio Díaz Mori</strong> (15 de septiembre de 1830 2 de julio de 1915) fue un militar, político y dictador mexicano que ejerció el poder en México durante más de treinta años, en un periodo conocido como el <em>Porfiriato</em>.</p>
+
+        <p>Díaz fue una figura clave en la historia de México. Participó en la defensa del país contra la invasión estadounidense y contra el imperio de Maximiliano. Tras una serie de conflictos internos, llegó a la presidencia en 1876 mediante un golpe de Estado, bajo el lema "No Reelección", aunque él mismo se mantuvo en el poder hasta 1911.</p>
+
+        <p>Durante su gobierno, México vivió un notable crecimiento económico, modernización de infraestructuras y estabilidad política, pero también una gran desigualdad social, represión y concentración del poder. Finalmente, fue derrocado por la Revolución Mexicana y murió en el exilio en París en 1915.</p>
+
+        <p class="credit">Imagen: Wikimedia Commons</p>
+        <button id="cambiarColor">Cambiar color de título</button>
+    </div>
+    <script>
+        const titulo = document.getElementById('titulo');
+        const boton = document.getElementById('cambiarColor');
+        let esRojo = false;
+        const colorOriginal = '#2c3e50';
+        const textoOriginal = titulo.textContent;
+
+        boton.addEventListener('click', function() {
+            if (esRojo) {
+                titulo.style.color = colorOriginal;
+                titulo.textContent = textoOriginal;
+            } else {
+                titulo.style.color = '#e74c3c';
+                titulo.textContent = 'hola';
+            }
+            esRojo = !esRojo;
+        });
+    </script>
+</body>
+</html>

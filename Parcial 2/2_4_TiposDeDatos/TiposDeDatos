@@ -1,0 +1,15 @@
+| Tipo de Dato        | Categoría        | Descripción breve                                                                 | Ejemplo                             |
+|---------------------|------------------|----------------------------------------------------------------------------------|--------------------------------------|
+| **String**          | Primitivo        | Representa texto, se define entre comillas simples, dobles o backticks.          | `"Hola"`, `'Mundo'`, `` `Hola ${x}` `` |
+| **Number**          | Primitivo        | Representa valores numéricos (enteros o decimales).                              | `42`, `3.14`, `-7`                   |
+| **BigInt**          | Primitivo        | Permite representar enteros muy grandes más allá del límite de Number.           | `12345678901234567890n`              |
+| **Boolean**         | Primitivo        | Representa valores lógicos: verdadero o falso.                                   | `true`, `false`                      |
+| **Undefined**       | Primitivo        | Valor asignado automáticamente a variables no inicializadas.                     | `let x; console.log(x); // undefined` |
+| **Null**            | Primitivo        | Representa la ausencia intencional de un valor u objeto.                         | `let y = null;`                      |
+| **Symbol**          | Primitivo        | Identificador único e inmutable, usado como clave de propiedades de objetos.     | `let id = Symbol('id');`             |
+| **Object**          | No primitivo     | Colección de pares clave-valor, base de casi todo en JavaScript.                 | `{ nombre: "Ana", edad: 20 }`        |
+| **Array**           | No primitivo     | Lista ordenada de elementos (tipo especial de objeto).                           | `[1, 2, 3, 4]`                       |
+| **Function**        | No primitivo     | Bloque reutilizable de código que realiza una acción.                            | `function suma(a,b){return a+b;}`    |
+| **Date**            | No primitivo     | Objeto usado para manejar fechas y horas.                                        | `new Date()`                         |
+| **RegExp**          | No primitivo     | Expresiones regulares para búsqueda y manipulación de texto.                     | `/\d+/`                              |
+| **Map / Set**       | No primitivo     | Colecciones con claves o valores únicos.                                         | `new Map()`, `new Set()`             |

@@ -1,0 +1,45 @@
+# Definicion de Conceptos:
+
+#### **Internet:** Internet es una red global de redes interconectadas que permite la comunicación y el intercambio de datos entre millones de dispositivos en todo el mundo. Funciona mediante un conjunto de protocolos de comunicación estandarizados que permiten enviar, recibir y acceder a información digital. A través de Internet se pueden utilizar diversos servicios, como la Web, el correo electrónico, la mensajería, el streaming, entre otros.
+
+![Imagen](https://neubox.com/blog/wp-content/uploads/2023/04/Imagen4.webp)
+
+#### **Protocoles (Mas usados):** Los protocolos de Internet son reglas que definen cómo se transmite la información entre dispositivos en la red. Los más utilizados son: 
+
+- #### TCP/IP (Transmission Control Protocol / Internet Protocol): Es la base de la comunicación en Internet; se encarga de dividir los datos en paquetes y asegurarse de que lleguen correctamente al destino.
+
+- #### HTTP/HTTPS (Hypertext Transfer Protocol / Secure): Protocolo para transferir páginas web. HTTPS es la versión segura con cifrado SSL/TLS.
+
+- #### FTP (File Transfer Protocol): Permite la transferencia de archivos entre dispositivos conectados.
+
+- #### DNS (Domain Name System): Traduce nombres de dominio (como google.com) en direcciones IP.
+
+- #### SMTP/IMAP/POP3: Protocolos utilizados para el envío y recepción de correos electrónicos.
+
+#### **WEB:** La Web (World Wide Web) es un servicio que funciona sobre Internet y permite acceder a documentos e información enlazada mediante hipervínculos. Utiliza principalmente el protocolo HTTP/HTTPS y está compuesta por páginas web escritas en HTML, accesibles a través de navegadores. Es solo una parte del Internet, aunque para la mayoría de las personas es la forma principal de interactuar con él.
+
+**Generaciones de la Web**
+
+- #### Web 1.0 (la Web estática): Primera etapa (años 90), donde las páginas eran informativas, estáticas y creadas solo por desarrolladores. El usuario solo consumía contenido.
+
+- ##### Web 2.0 (la Web social): Introduce la interacción, contenido generado por el usuario (como blogs, redes sociales, wikis), y servicios colaborativos. Los usuarios pueden comentar, compartir y participar activamente.
+
+- #### Web 3.0 (la Web semántica y descentralizada): En evolución. Promueve la descentralización (blockchain, Web3), inteligencia artificial, datos conectados y personalizados, donde las máquinas pueden entender mejor el contenido.
+
+![Imagen](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0x945PilRIJdbMAa0VlasR9ks1SfQPuiMmnqGZjOEeZCfHc1RrRTFgPdJLrOazOWaMFK6kRZePJGvMzAPZR8rrQHHcCe2XSAfkTnQQcF3hd-9mGmWLIy8LX5418tK8uh8mvtPK-MRZEI/s1600/mn+bvskdj.jpg)
+
+#### **Surface WEB, Deep WEB y Dark WEB:**
+
+#### Surface Web (Web superficial): Es la parte de la Web que está indexada por los motores de búsqueda como Google o Bing. Es accesible para cualquier usuario sin credenciales especiales. Ejemplo: sitios de noticias, tiendas online, blogs públicos.
+
+#### Deep Web (Web profunda): Contenido no indexado por motores de búsqueda. Incluye bases de datos académicas, correos electrónicos, plataformas privadas, intranets, etc. No es ilegal; simplemente está restringido o protegido por contraseña.
+
+#### Dark Web (Web oscura): Subconjunto de la Deep Web accesible solo con software especial como Tor. Se caracteriza por el anonimato extremo. Aunque tiene usos legítimos (como la comunicación en países con censura), también se asocia con actividades ilegales (mercados de drogas, armas, etc.).
+
+![Imagen](https://proxyelite.info/wp-content/uploads/2023/12/surface-web.jpg)
+
+#### **Hypertexto:** El hipertexto es un sistema de organización de información que permite enlazar diferentes fragmentos de texto o documentos mediante vínculos (hipervínculos o "links"). Al hacer clic en un enlace, el usuario puede navegar hacia otro contenido relacionado. Es la base de la navegación en la Web, permitiendo una experiencia no lineal de lectura e interacción.
+
+#### **HTML:** HTML es el lenguaje de marcado estándar utilizado para crear y estructurar páginas web. Define la estructura básica de un documento web (como títulos, párrafos, imágenes, enlaces, tablas, formularios, etc.). Aunque no es un lenguaje de programación, HTML es fundamental para el desarrollo web, ya que se combina con CSS (para estilos) y JavaScript (para funcionalidad) para construir interfaces modernas.
+
+![Imagen](https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png)

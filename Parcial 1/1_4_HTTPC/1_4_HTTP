@@ -1,0 +1,106 @@
+# Protocolo HTTP
+
+## ¿Qué es HTTP?
+
+HTTP (HyperText Transfer Protocol) es un protocolo de comunicación utilizado para transferir información a través de la web. Funciona bajo un modelo cliente-servidor, donde un cliente (como un navegador web) realiza solicitudes a un servidor, y este responde con los recursos solicitados.
+
+![¿Qué es HTTP?](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/HTTP_logo.svg/1200px-HTTP_logo.svg.png)
+
+---
+
+## ¿Cuál es la estructura de una petición?
+
+Una petición HTTP sigue la siguiente estructura:
+
+<VERBO> <RUTA> <VERSIÓN>
+Encabezados
+(Línea vacía)
+[Body - opcional]
+
+makefile
+Copy code
+
+**Ejemplo:**
+GET /index.html HTTP/1.1
+Host: www.ejemplo.com
+User-Agent: Mozilla/5.0
+Accept: text/html
+
+markdown
+Copy code
+
+![Estructura de la petición HTTP](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8DVUeiJ7T7FiEJwN-LaHVi1NDtgyblpoGyQ&s)
+
+---
+
+## ¿Cuáles son los métodos más usados?
+
+Los métodos HTTP indican la acción que se desea realizar sobre un recurso:
+
+- `GET`: Obtener datos.
+- `POST`: Enviar datos.
+- `PUT`: Reemplazar datos.
+- `DELETE`: Eliminar datos.
+- `PATCH`: Actualización parcial.
+- `HEAD`, `OPTIONS`: Otros usos específicos.
+
+![Métodos HTTP](https://tecsify.com/blog/wp-content/uploads/2022/08/MetodosHTTP-1.jpg)
+
+---
+
+## ¿Cuáles son los códigos de estado?
+
+Los códigos de estado HTTP indican el resultado de una petición:
+
+- **1xx**: Informativos
+- **2xx**: Éxito (`200 OK`, `201 Created`)
+- **3xx**: Redirecciones (`301`, `302`)
+- **4xx**: Error del cliente (`400`, `401`, `404`)
+- **5xx**: Error del servidor (`500`, `503`)
+
+![Códigos de estado HTTP](https://static.semrush.com/blog/uploads/media/f5/7c/f57c8f9295d20dc481e81ae1a782c13c/ES-HTTPS-Status-Codes.png)
+
+---
+
+## ¿Qué son los encabezados?
+
+Los encabezados HTTP (headers) transportan información adicional sobre la petición o la respuesta. Se componen de pares clave:valor.
+
+**Ejemplo:**
+Content-Type: application/json
+Authorization: Bearer <token>
+Cache-Control: no-cache
+
+yaml
+Copy code
+
+![Encabezados HTTP](https://www.aprenderaprogramar.com/images/stories/Cursos/CU012/CU01208F_2_ajax_tutorial.jpg)
+
+---
+
+## ¿Qué es y cuál es la estructura de una URL?
+
+Una URL (Uniform Resource Locator) es la dirección que identifica un recurso en la web. Su estructura es:
+
+<esquema>://<host>:<puerto>/<ruta>?<query>#<fragmento>
+
+makefile
+Copy code
+
+**Ejemplo:**
+https://www.ejemplo.com:443/productos?id=123#detalles
+
+yaml
+Copy code
+
+**Componentes:**
+- Esquema: `https`
+- Host: `www.ejemplo.com`
+- Puerto: `443`
+- Ruta: `/productos`
+- Query: `?id=123`
+- Fragmento: `#detalles`
+
+![Estructura de una URL](https://www.sidn.es/wp-api/wp-content/uploads/2023/03/estructura-url-para-seo.png)
+
+---

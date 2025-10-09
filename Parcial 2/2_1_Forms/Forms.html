@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con PureCSS</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@3.0.0/build/pure-min.css">
+
+</head>
+<body>
+    <form class="pure-form pure-form-stacked"
+          action="https://httpbin.org/post" method="POST" target="resultadoPost">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="nombre">Nombre</label>
+            <input id="nombre" type="text" name="nombre" class="pure-input-1">
+
+            <label for="apellido">Apellido</label>
+            <input id="apellido" type="text" name="apellido" class="pure-input-1">
+
+            <button type="submit" class="pure-button pure-button-primary">Enviar</button>
+        </fieldset>
+    </form>
+    <iframe name="resultadoPost"></iframe>
+</body>
+</html>
